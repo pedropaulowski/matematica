@@ -6,6 +6,17 @@
 	<title>Matemática Fundamental</title>
 	<link rel="stylesheet" type="text/css" href="css/normalize.css"/>
 	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<script type="text/javascript">
+		window.onload = function(){
+	document.querySelector(".menuMobile").addEventListener("click", function(){
+		if(document.querySelector(".menu nav ul").style.display == 'flex') {
+			document.querySelector(".menu nav ul").style.display = 'none';
+		} else {
+			document.querySelector(".menu nav ul").style.display = 'flex';
+		}
+	});
+};
+	</script>	
 </head>
 <body>
 	<header>
@@ -15,6 +26,11 @@
 			</div>	
 			<div class="menu">
 				<nav>
+					<div class="menuMobile">
+						<div class="mm_line"></div>
+						<div class="mm_line"></div>
+						<div class="mm_line"></div>
+					</div>
 					<ul>
 						<li><a href="">SOMA</a></li>
 						<li><a href="">SUBRTRAÇÃO</a></li>
