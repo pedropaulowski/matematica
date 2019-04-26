@@ -140,4 +140,7 @@ footer{
 	border-radius: 5px;
 	transition-duration: 0.7s;
 }
+	.footer p{
+		display: none;
+	}
 }
