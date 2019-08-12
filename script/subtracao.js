@@ -9,15 +9,15 @@ function responder() {
 	var n1 = parseInt(document.querySelector("#n1").innerHTML);
 	var n2 = parseInt(document.querySelector("#n2").innerHTML);
 	var resposta = parseInt(document.querySelector("#resposta").value);
-	var soma = n1 + n2;
+	var divisao = n1 - n2;
 
 
-	if(soma === resposta) {
+	if(divisao === resposta) {
 		var txt = "Acertou";
 		container_resposta.appendChild(mensagem);
 		mensagem.innerText = txt;
 	} else {
-		var txt = "Errou, o resultado era: "+soma+".";
+		var txt = "Errou, o resultado era: "+divisao+".";
 		container_resposta.appendChild(mensagem);		
 		mensagem.innerText = txt;
 	}
