@@ -34,9 +34,4 @@ function sortear() {
 	var mensagem = document.querySelector("#mensagem");
 	mensagem.innerHTML = '';
 
-	var txt = "";
-	var ancora = document.querySelector("#mensagem a");
-	ancora.innerText = txt;
-
-	mensagem.appendChild(ancora);
 }

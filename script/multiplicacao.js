@@ -29,12 +29,11 @@ function sortear() {
 	x = Math.floor(Math.random() * 100);
 	y = Math.floor(Math.random() * 100);
 
+	
+	document.querySelector("#n1").innerHTML = x;
+	document.querySelector("#n2").innerHTML = y;
+	
 	var mensagem = document.querySelector("#mensagem");
 	mensagem.innerHTML = '';
 
-	var txt = "";
-	var ancora = document.querySelector("#mensagem a");
-	ancora.innerText = txt;
-
-	mensagem.appendChild(ancora);
 }
