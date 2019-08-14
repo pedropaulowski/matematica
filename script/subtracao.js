@@ -1,28 +1,26 @@
 function responder() {
 	var container_resposta = document.querySelector(".container_resposta");
-	var mensagem = document.createElement("div");
-
-	mensagem.setAttribute("class", "mensagem");
-	
-	
-	
+	var mensagem = document.querySelector("#mensagem");
+		
 	var n1 = parseInt(document.querySelector("#n1").innerHTML);
 	var n2 = parseInt(document.querySelector("#n2").innerHTML);
 	var resposta = parseInt(document.querySelector("#resposta").value);
-	var divisao = n1 - n2;
+	var subtracao = n1 - n2;
 
 
-	if(divisao === resposta) {
+	if(subtracao === resposta) {
 		var txt = "Acertou";
-		container_resposta.appendChild(mensagem);
-		mensagem.innerText = txt;
+		var ancora = document.createElement("a");
+		ancora.innerText = txt;
+		mensagem.appendChild(ancora);
 	} else {
 		var txt = "Errou, o resultado era: "+divisao+".";
-		container_resposta.appendChild(mensagem);		
-		mensagem.innerText = txt;
+		let ancora = document.createElement("a");
+		ancora.innerText = txt;
+		mensagem.appendChild(ancora);
 	}
 	
-	setTimeout(sortear, 2000);
+	setTimeout(sortear, 1000);
 }
 
 function sortear() {
@@ -32,6 +30,12 @@ function sortear() {
 	document.querySelector("#n1").innerHTML = x;
 	document.querySelector("#n2").innerHTML = y;
 
-	var mensagem = document.querySelector(".mensagem")
-	mensagem.innerText = "";
+	var mensagem = document.querySelector("#mensagem");
+	mensagem.innerHTML = '';
+
+	var txt = "";
+	var ancora = document.querySelector("#mensagem a");
+	ancora.innerText = txt;
+
+	mensagem.appendChild(ancora);
 }

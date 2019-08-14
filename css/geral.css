@@ -32,6 +32,17 @@ header{
 	background-color: #F5F0DC;
 	height: 150px;
 }
+.container_mensagem {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	max-width: 960px;
+	margin: auto;
+	background-color: #F5F0DC;
+	height: 150px;
+}
 .container_conta {
 	display: flex;
 	justify-content: space-around;
