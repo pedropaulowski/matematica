@@ -14,7 +14,7 @@ function responder() {
 		ancora.innerText = txt;
 		mensagem.appendChild(ancora);
 	} else {
-		var txt = "Errou, o resultado era: "+divisao+".";
+		var txt = "Errou, o resultado era: "+subtracao+".";
 		let ancora = document.createElement("a");
 		ancora.innerText = txt;
 		mensagem.appendChild(ancora);
